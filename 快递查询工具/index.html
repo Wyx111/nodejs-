@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>nodejs入门案例--快递查询工具</title>
+</head>
+<body>
+    <h1>Node.js入门--快递查询小工具</h1>
+    <div class="content">
+        <h3>简单，简单，狠简单！</h3>
+        <select id="type" style="margin: 20px;width: 80px;height: 50px;font-size: 18px;border:2px solid #333">
+            <option value="shunfeng" label="顺丰"></option>
+            <option value="shentong" label="申通"></option>
+            <option value="yuantong" label="圆通"></option>
+            <option value="zhongtong" label="中通"></option>
+            <option value="ems" label="ems"></option>
+            <option value="yunda" label="韵达"></option>
+            <option value="tiantian" label="天天"></option>
+            <option value="huitong" label="汇通"></option>
+            <option value="yousu" label="优速"></option>
+            <option value="debang" label="德邦"></option>
+        </select>
+        <input id="postid" type="text" placeholder="请输入需要查询的快递单号" style="width: 300px;height: 50px;font-size: 18px;border:2px solid #333">
+        <input type="button" value="查询" style="width: 80px;height: 50px;font-size: 18px;border:2px solid #333" class="btn">
+            <div>
+                <h3>查询结果:</h3>
+            </div>
+           <div class="full">
+                <h3 style="color: red" class="nullcontent">暂无内容</h3>
+           </div>
+    </div> 
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
